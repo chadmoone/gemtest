@@ -12,13 +12,13 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{A gem summary}
   gem.homepage      = ""
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
+  gem.files         = `git ls-files`.split("\n")
+  gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  gem.require_paths = ["lib"]
 
-  s.add_runtime_dependency 'railties', '>= 3.1.1'
-  s.add_runtime_dependency 'sass-rails', '>= 3.1.1'
+  gem.add_runtime_dependency 'railties', '>= 3.1.1'
+  gem.add_runtime_dependency 'sass-rails', '>= 3.1.1'
 end
 
 # Gem::Specification.new do |s|
