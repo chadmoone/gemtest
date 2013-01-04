@@ -1,25 +1,28 @@
 # -*- encoding: utf-8 -*-
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+$:.push File.expand_path("../lib", __FILE__)
 require 'gemtest/version'
 
-Gem::Specification.new do |gem|
-  gem.name          = "gemtest"
-  gem.version       = Gemtest::VERSION
-  gem.authors       = ["Chad Moone"]
-  gem.email         = ["chadmoone@gmail.com"]
-  gem.description   = %q{A gem description}
-  gem.summary       = %q{A gem summary}
-  gem.homepage      = ""
+Gem::Specification.new do |s|
+  s.name          = "gemtest"
+  s.version       = Gemtest::VERSION
+  s.authors       = ["Chad Moone"]
+  s.email         = ["chadmoone@gmail.com"]
+  s.description   = %q{A gem description}
+  s.summary       = %q{A gem summary}
+  s.homepage      = ""
 
-  gem.files         = `git ls-files`.split("\n")
-  gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  gem.require_paths = ["lib"]
+  s.files         = `git ls-files`.split("\n")
+  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.require_paths = ["lib"]
 
-  gem.add_runtime_dependency 'railties', '>= 3.1.1'
-  gem.add_runtime_dependency 'sass-rails', '>= 3.1.1'
+  s.add_runtime_dependency 'railties', '>= 3.1.1'
+  s.add_runtime_dependency 'sass-rails', '>= 3.1.1'
 end
+
+
+# $:.push File.expand_path("../lib", __FILE__)
+# require "font-awesome-sass-rails/version"
 
 # Gem::Specification.new do |s|
 #   s.name        = "font-awesome-sass-rails"
