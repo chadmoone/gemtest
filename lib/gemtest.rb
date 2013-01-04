@@ -1,5 +1,3 @@
-require "gemtest/version"
-
 module Gemtest
-  # Your code goes here...
+  require "gemtest/version"
 end
