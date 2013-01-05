@@ -4,7 +4,7 @@ require "gemtest/version"
 
 Gem::Specification.new do |s|
   s.name        = "gemtest"
-  s.version     = Gemtest::VERSION
+  s.version     = Font::Awesome::Sass::Rails::VERSION
   s.authors     = ["Chad Moone"]
   s.email       = ["chadmoone@gmail.com"]
   s.homepage    = "https://github.com/chadmoone/gemtest"
