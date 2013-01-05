@@ -1,4 +1,4 @@
-source "http://rubygems.org"
+source 'https://rubygems.org'
 
-# Specify your gem's dependencies in font-awesome-sass-rails.gemspec
+# Specify your gem's dependencies in gemtest.gemspec
 gemspec
